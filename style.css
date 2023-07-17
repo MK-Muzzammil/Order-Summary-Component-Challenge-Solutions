@@ -1,0 +1,134 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+  margin: 0;padding: 0;
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif
+}
+:root{
+  --Pale-blue:hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+
+}
+.paraGraphClass{
+  font-size: 16px;
+  color:var(--Desaturated-blue);
+  max-width: 280px;
+  padding-block: 1rem;
+}
+#headingContent{
+  margin-top: 0.1rem;
+  color: var(--Desaturated-blue);
+}
+.mainContainer{
+  position: relative;
+  background-image:url(icons/pattern-background-desktop.svg);
+  background-position:top;
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-color: var(--Pale-blue);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.mainCardContainer{
+  max-width: 320px;
+  background-color: var(--Very-pale-blue);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+.heroImageContainer img{
+  max-width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.heroContentContainer{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+.heading{
+  color: var(--Dark-blue);
+
+}
+.smallBox{
+  background-color: var(--Pale-blue);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 15px;
+  border: none;
+}
+
+.anchorTagContainer a{
+  margin-left: 2.9rem;
+  text-decoration: none;
+  color: var(--Bright-blue);
+}
+
+.buttonContainer{
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+}
+
+#proceedButton{
+  background-color: var(--Bright-blue);
+  color: var(--Very-pale-blue);
+  border-radius: 10px;
+  width: 260px;
+  height:2.2rem;
+  text-align: center;
+  border: none;
+  box-shadow: 7px 7px 4px 3px var(--Pale-blue);
+
+}
+#cancelButton{
+  background-color: var(--Very-pale-blue);
+  color: var(--Desaturated-blue);
+  border-radius: 10px;
+  width: 260p x;
+  height:2.2rem;  
+  text-align: center;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+#proceedButton:hover , #cancelButton:hover{
+  cursor: pointer;
+}
+
+@media screen and (max-width:400px) {
+  .mainContainer{
+    background-image: url(icons/pattern-background-mobile.svg);
+  }
+
+  
+}
+
+
+
+
+
